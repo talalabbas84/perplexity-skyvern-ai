@@ -91,10 +91,3 @@ This application integrates **Perplexity's UI** into a custom interface using **
   ```bash
   docker-compose down
   docker-compose up --build
-Automation Issues: If Skyvern fails to interact with Perplexity, check the secrets.toml file and ensure API tokens are configured correctly.
-Future Improvements
-Enhanced Error Handling: Additional error handling for various automation steps.
-Conditional Logic: Future plans include adding conditional workflows based on query content.
-Customizable Workflows: Allow users to define custom actions and data extraction goals for Skyvern.
-License
-This project is licensed under the AGPL-3.0 License.
