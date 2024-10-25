@@ -1,0 +1,82 @@
+# General ignore file reference
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# Root-level dependencies
+/node_modules
+/.pnp
+.pnp.js
+
+# Testing
+/coverage
+
+# Production
+/build
+
+# Miscellaneous
+.DS_Store
+
+# Environment configuration files
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Frontend ignores (inside /frontend)
+frontend/node_modules/
+frontend/.pnp
+frontend.pnp.js
+frontend/coverage
+frontend/build
+
+# Backend ignores (inside /backend)
+backend/__pycache__/
+backend/*.py[cod]
+backend/$py.class
+
+# Backend dependencies
+backend/.Python
+backend/build/
+backend/develop-eggs/
+backend/dist/
+backend/downloads/
+backend/eggs/
+backend/.eggs/
+backend/lib/
+backend/lib64/
+backend/parts/
+backend/sdist/
+backend/var/
+backend/*.egg-info/
+backend/.installed.cfg
+backend/*.egg
+backend/MANIFEST
+
+# Logs and temporary files
+frontend/npm-debug.log*
+frontend/yarn-debug.log*
+frontend/yarn-error.log*
+backend/pip-log.txt
+backend/pip-delete-this-directory.txt
+
+# Python-related ignores
+backend/.mypy_cache/
+backend/.pytest_cache/
+backend/.pyre/
+backend/__pycache__/
+backend/*.py[cod]
+backend/env/
+backend/venv/
+backend/.venv/
+
+# Jupyter Notebook
+backend/.ipynb_checkpoints
+
+# IDEs and editor configurations
+frontend/.idea/
+frontend/.vscode/
+backend/.idea/
+backend/.vscode/
