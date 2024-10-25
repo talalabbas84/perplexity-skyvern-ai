@@ -61,8 +61,6 @@ This application integrates **Perplexity's UI** into a custom interface using **
    - Input your query into the search field.
    - The app will send this query to Perplexity’s UI by automating browser actions with Skyvern, capturing the response, and displaying it in the frontend.
 
-3. **Monitoring Automation**:
-   - If you have Streamlit set up, you can monitor Skyvern’s interactions with Perplexity’s UI in real-time at [http://localhost:8501](http://localhost:8501).
 
 ### Configuration Options
 
