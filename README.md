@@ -42,22 +42,13 @@ This application integrates **Perplexity's UI** into a custom interface using **
     docker-compose up --build
     ```
 
-    This will start:
-    - **PostgreSQL**: The database for Skyvern.
-    - **Skyvern Backend**: Handles the automation and API requests.
-    - **Skyvern UI**: The user interface for sending queries.
-    - **Streamlit Visualizer** (optional): A visualizer for monitoring and debugging Skyvern’s tasks.
-
 ### Application Structure
 
 - **`backend/skyvern`**: Contains the Skyvern backend, which performs the main automation tasks. It includes custom scripts to manage queries and organization creation.
 - **`skyvern-frontend`**: A React-based frontend application that provides a simple UI for users to input queries and view responses from Perplexity via Skyvern.
-- **Streamlit Visualizer**: For debugging purposes, Skyvern integrates a Streamlit visualizer, allowing you to see interactions with Perplexity in real-time.
 
 ### Key Files and Scripts
 
-- **`entrypoint.sh`** (Backend): Initializes the database, runs migrations, creates the organization and API token, and starts Skyvern.
-- **`entrypoint.sh`** (Frontend): Sets up the API key from Skyvern’s generated secrets and starts the frontend application.
 - **SkyvernService.py**: A service class that handles the interaction with Perplexity by sending automated actions via Skyvern.
 - **Dockerfile** and **docker-compose.yml**: Configurations to run the entire application stack in containers.
 
@@ -75,11 +66,6 @@ This application integrates **Perplexity's UI** into a custom interface using **
 
 ### Configuration Options
 
-#### LLM Provider Setup
-- The app supports multiple LLM providers, which can be configured in the `.env` file:
-  - `ENABLE_OPENAI`, `OPENAI_API_KEY`
-  - `ENABLE_ANTHROPIC`, `ANTHROPIC_API_KEY`
-  - `ENABLE_AZURE`, `AZURE_API_KEY`
 
 #### Environment Variables
 - `DATABASE_STRING`: Connection string for PostgreSQL.
